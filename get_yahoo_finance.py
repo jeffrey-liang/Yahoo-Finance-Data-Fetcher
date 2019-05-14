@@ -34,12 +34,10 @@ def get_data(tickers, start=None, end=None, sleep=1):
         Returns the downloaded data where the key is the the ticker, 
         and the item is a pandas dataframe.
 
-    Inner workings:
-    1. Get crumb of session from yahoo
-    2. Using the crumb, we can use the direct download link for the data
+
+    Note: Currently no error checking for invalid tickers.
 
     '''
-
     # dict to store the downloaed data
     data = {}
 
